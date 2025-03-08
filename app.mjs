@@ -1,5 +1,7 @@
 import express from 'express'
+import cors from 'cors'
 const app = express()
+app.use(cors())
 const port = 3000
 const currencies = [
   { name: 'US Dollar', code: 'USD', "PKR/USD": 0.0036, "USD/PKR": 280.50 },
